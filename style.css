@@ -1,0 +1,328 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #12121f; */
+    background: linear-gradient(to bottom, #68EACC, #497be8);
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px -54px;
+}
+
+.calendar{
+    width: 45rem;
+    height: 52rem;
+    background-color:#653aa6;
+    box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.4);
+    font-weight: 600;
+}
+
+.month{
+    width: 100%;
+    height: 12rem;
+    background-color: #c443a3d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+}
+
+.month i{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.month h1{
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.month p{
+    font-size: 1.6rem;
+}
+
+.weekdays{
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays div{
+   font-size: 1.5rem;
+   font-weight: 400;
+   letter-spacing: 0.1rem;
+   width: calc(44.2rem/7);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+}
+
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+
+
+.days div{
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(40.2rem/7);
+    height: 5rem;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+   transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today){
+    background-color: #4c5041;
+    border: 0.2rem solid #777;
+    cursor: pointer;
+}
+
+.prev-date,.next-date{
+    opacity: 0.5;
+}
+
+.today,.holidays{
+    background: rgb(43, 174, 226);
+}
+.days div:hover:not(.today,.holidays){
+    background-color: #262626;
+    border: 0.2rem solid #777;
+    cursor: pointer;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #68EACC, #497be8);
+}
+.wrapper{
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+    /* margin: 0px 0px 0px -54px; */
+    margin:-395px 0px 0px 900px
+}
+.wrapper header{
+    font-size: 30px;
+    font-weight: 500;
+}
+.wrapper .inputField{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+.inputField input{
+    width: 85%;
+    height: 100%;
+    border: 1px solid #CCC;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+.inputField button{
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: darkmagenta;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.inputField button.active{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+.wrapper .todoList{
+    max-height: 250px;
+    overflow-y: auto;
+}
+.todoList li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position:relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0px 15px;
+    cursor: default;
+    overflow: hidden;
+}
+.todoList li span{
+    position: absolute;
+    right: -45px;
+    /* right: 0px; */
+    color: #fff;
+    width: 45px;
+    text-align: center;
+    background-color:red;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.todoList li:hover span{
+    right: 0px;
+}
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.footer button{
+    border: none;
+    outline: none;
+    background: darkmagenta;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 10px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+.contain{
+
+    margin: -480px 71px 54px 20px;
+    /* height: 1100px; */
+    width: 1200px
+ }
+  ul li{
+ 
+      list-style-type: none;
+  }
+ 
+ .nav1 a{  
+     text-decoration: none;
+     font-size: 2.1rem;
+ }
+  ul li button{
+      font-family: 'Courgette', cursive;
+    height: 5rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 20%;
+    font-weight: 600;
+    background: linear-gradient(#e6e35f, #41e6e6);
+    border-radius: 12px;
+    font-weight: 700;
+ }
+
+ ul li button:hover{
+     /* top: 30px; */
+     height: 6rem;
+     background: rgb(207, 155, 241);
+     text-align: center;
+     width: 20%;
+     transition: 0.25s;
+     border: 0.2rem solid #777;
+     cursor: pointer;
+  }
+ 
+ 
+  .contain ul li button content #jan{
+ 
+  } 
+ 
+ 
+ 
+  .calendar1{
+   margin: 49px 33px 35px 376px;
+     max-width: 580px;
+     font-family: serif;
+     font-weight: 600;
+     color: black;
+ }
+ .month1{
+     text-align: center;
+     background: rgb(165, 124, 124);
+     font-size: 18px;
+     letter-spacing: 1px;
+     color: #613cca;
+     /* border: 3px solid red; */
+     background: rgba(255, 204, 52, 0.79);
+     padding: 25px 1px 24px 12px;
+ }
+ table, th, td{
+     width: 100%;
+     table-layout: fixed;
+     text-align: center;
+     font-size: 27px;
+     border-collapse: collapse;
+     /* border: 5px solid black; */
+     font-family: Elaphant;
+ }
+ 
+ tr, th, td{
+     padding: 15px;
+ }
+ 
+ th{
+     background: #72bb58;
+     color: #915252;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ td{
+    background: #1a3855;
+    color: #ebf212;
+}
+td:hover{
+    transition: 0.2s;
+    background: rgb(171, 87, 192);
+    border: 0.2rem solid #777;
+    cursor: pointer;
+}
+ td .holiday{
+    background: rgb(110, 124, 128);
+    font-size: 13px;
+    align-items: center;
+}
+
+ 
